@@ -23,11 +23,11 @@ const products = [
         price: 149,
         colors: [
             {
-                code: "lightgray",
-                img: "./img/jordan.png",
+                code: "white",
+                img: "./img/jordan1.png",
             },
             {
-                code: "green",
+                code: "red",
                 img: "./img/jordan2.png",
             },
         ],
@@ -49,31 +49,31 @@ const products = [
     },
     {
         id: 4,
-        title: "Crater",
+        title: "Court Vision",
         price: 129,
         colors: [
             {
-                code: "black",
-                img: "./img/crater.png",
+                code: "white",
+                img: "./img/court1.png",
             },
             {
-                code: "lightgray",
-                img: "./img/crater2.png",
+                code: "black",
+                img: "./img/court2.png",
             },
         ],
     },
     {
         id: 5,
-        title: "Hippie",
+        title: "flight Legacy",
         price: 99,
         colors: [
             {
-                code: "gray",
-                img: "./img/hippie.png",
+                code: "white",
+                img: "./img/flight1.png",
             },
             {
                 code: "black",
-                img: "./img/hippie2.png",
+                img: "./img/flight2.png",
             },
         ],
     },

@@ -100,6 +100,8 @@ nav {
 /* Styles for the main image in slider items */
 .sliderImg {
     z-index: 1;
+    width: 750px;
+
 }
 
 /* Styles for the title in slider items */
@@ -152,7 +154,7 @@ nav {
     background-color: #369e62;
 }
 .sliderItem:nth-child(2) .sliderBg {
-    background-color: rebeccapurple;
+    background-color: rgb(81, 81, 82);
 }
 .sliderItem:nth-child(3) .sliderBg {
     background-color: teal;
