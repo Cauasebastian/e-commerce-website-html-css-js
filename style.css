@@ -67,11 +67,14 @@ nav {
 }
 
 /* Styles for the slider section */
+/* Styles for the slider section */
 .slider {
-    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    background: url("https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center/cover no-repeat; /* Define a imagem como plano de fundo do slider */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     overflow: hidden;
+    background-size: cover; /* Ajuste para cobrir todo o contêiner sem distorção */
 }
+
 
 /* Styles for the wrapper of slider items */
 .sliderWrapper {
@@ -151,36 +154,46 @@ nav {
 
 /* Additional styling for specific slider items */
 .sliderItem:nth-child(1) .sliderBg {
-    background-color: #369e62;
+    border: 2px solid hsl(224.83deg 94.32% 49.27% / 49%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px 15px rgb(0 6 255 / 24%);
 }
 .sliderItem:nth-child(2) .sliderBg {
-    background-color: rgb(81, 81, 82);
+    border: 2px solid hsla(0, 0%, 100%, 0.49);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.24);
 }
 .sliderItem:nth-child(3) .sliderBg {
-    background-color: teal;
+    border: 2px solid hsl(0deg 100% 50% / 49%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px 15px rgb(255 0 0 / 24%);
 }
 .sliderItem:nth-child(4) .sliderBg {
-    background-color: cornflowerblue;
+    border: 2px solid hsl(171.66deg 100% 50% / 49%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px 15px rgb(0 255 167 / 24%);
 }
 .sliderItem:nth-child(5) .sliderBg {
-    background-color: rgb(124, 115, 80);
+    border: 2px solid hsl(56.46deg 100% 50% / 49%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px 15px rgb(255 225 0 / 24%);
 }
 
 /* Additional styling for specific slider item prices */
 .sliderItem:nth-child(1) .sliderPrice {
-    color: #369e62;
+    color: #ffffff;
 }
 .sliderItem:nth-child(2) .sliderPrice {
     color: white;
 }
 .sliderItem:nth-child(3) .sliderPrice {
-    color: teal;
+    color: rgb(255, 255, 255);
 }
 .sliderItem:nth-child(4) .sliderPrice {
-    color: cornflowerblue;
+    color: rgb(255, 255, 255);
 }
 .sliderItem:nth-child(5) .sliderPrice {
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 
 /* Styles for the features section */
@@ -339,7 +352,7 @@ label {
 
 /* Styles for the product description */
 .productDesc {
-    font-size: 24px;
+    font-size: 18px;
     color: gray;
 }
 
@@ -362,7 +375,7 @@ label {
 
 /* Styles for the last color item */
 .color:last-child {
-    background-color: darkblue;
+    background-color: rgb(255, 2, 2);
 }
 
 /* Styles for individual size items */
@@ -513,6 +526,11 @@ footer {
 
 /* Media query for screens with a maximum width of 480px */
 @media screen and (max-width:480px) {
+    .productDesc {
+        font-size: 10px; /* Reduz o tamanho da fonte das descrições dos produtos */
+    }
+
+    
     nav{
         padding: 20px;
     }
@@ -536,7 +554,8 @@ footer {
     }
 
     .sliderImg{
-        width: 90%;
+        max-width: 100%; /* Define uma largura máxima para as imagens do slider */
+        height: auto; /* Permite que a altura seja ajustada automaticamente proporcionalmente à largura */
     }
 
     .sliderBg{
@@ -552,7 +571,7 @@ footer {
         top: unset;
         bottom: -50px;
         left: 0;
-        background-color: lightgrey;
+       
     }
 
     .buyButton{
@@ -587,7 +606,7 @@ footer {
     }
 
     .productTitle{
-        font-size: 50px;
+        font-size: 35px;
         margin: 0;
     }
 
